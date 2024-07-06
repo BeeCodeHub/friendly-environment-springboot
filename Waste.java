@@ -1,6 +1,6 @@
 package com.enviro.assessment.grad001.buwamabasa.enviro_waste_management;
 
-public class WasteDisposal {
+public class Waste {
 	private long id;
 	private String category;
 	private String item;
@@ -10,12 +10,11 @@ public class WasteDisposal {
 	//Getters
 	//toString
 	
-	public WasteDisposal(long id, String category, String item, String bin) {
+	public Waste(long id, String category, String item) {
 		super();
 		this.id = id;
 		this.category = category;
 		this.item = item;
-		this.bin = bin;
 	}
 	
 	public long getId() {
