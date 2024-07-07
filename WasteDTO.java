@@ -4,7 +4,6 @@ public class WasteDTO {
 	private long id;
 	private String category;
 	private String item;
-	private String bin;
 	
 	//Constructor
 	//Getters
@@ -26,13 +25,10 @@ public class WasteDTO {
 	public String getItem() {
 		return item;
 	}
-	public String getBin() {
-		return bin;
-	}
 	
 	@Override
 	public String toString() {
-		return "WasteDisposal [id=" + id + ", category=" + category + ", item=" + item + ", bin=" + bin + "]";
+		return "WasteDisposal [id=" + id + ", category=" + category + ", item=" + item + "]";
 	}
 	
 	

@@ -11,7 +11,7 @@ public class AppConfig {
         return new PickupService();
     }
 
-    public PickupController pickupController() {
-        return new PickupController(pickupService());
-    }
+//    public PickupController pickupController() {
+//        return new PickupController(pickupService());
+//    }
 }

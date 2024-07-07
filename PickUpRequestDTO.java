@@ -10,7 +10,6 @@ public class PickUpRequestDTO {
     public PickUpRequestDTO() {
     }
 
-    //constructors
     public PickUpRequestDTO(String name, String address, String contactNumber, String autoPartsDetails) {
     	this.name = name;
     	this.address = address;
@@ -18,7 +17,6 @@ public class PickUpRequestDTO {
     	this.autoPartsDetails = autoPartsDetails;
     }
     
-    // Getters and Setters
     public String getName() {
         return name;
     }
