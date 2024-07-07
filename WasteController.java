@@ -2,17 +2,16 @@ package com.enviro.assessment.grad001.buwamabasa.enviro_waste_management;
 
 import java.util.Arrays;
 import java.util.List;
-
-import org.springframework.http.ResponseEntity;
+import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-//http://localhost:8080/wastes
+//http://localhost:8080/api
 @RestController
 @RequestMapping("/api")
 public class WasteController {
 	
-	@RequestMapping("/wastes")
+	@GetMapping("/wastes")
 	public List<WasteDTO> retrieveAllWastes() {
 		return Arrays.asList(
 				new WasteDTO(1, "Plastic", "plastic container"),
@@ -22,6 +21,7 @@ public class WasteController {
 		);
 	}
 	
+	@GetMapping("/wasteservice")
 	public List<WasteService> retrieveWasteServices() {
 		return Arrays.asList(
 				new WasteService("Plastic container", "Recycling Bin"),
@@ -31,6 +31,7 @@ public class WasteController {
 		);
 	}
 	
+	@GetMapping("/dropofflocationsinthearea")
 	public List<DropOffLocationsInTheArea> retrieveAllDropOffLocations() {
 		return Arrays.asList(
 				new DropOffLocationsInTheArea("Battery", "Local Batteries Centre"),
@@ -38,12 +39,5 @@ public class WasteController {
 				new DropOffLocationsInTheArea("Auto parts", "ABC local scapyard")
 		);
 	}
-	
-//	private PickUpService pickupservice;
-	
-//	public ResponseEntity<String> requestPickUp(PickUpRequestDTO request) {
-//        PickUpService.handlePickupRequest(request);
-//        return ResponseEntity.ok("Pickup request received successfully");
-//	}
 
 }
