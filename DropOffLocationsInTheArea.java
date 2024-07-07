@@ -8,19 +8,26 @@ package com.enviro.assessment.grad001.buwamabasa.enviro_waste_management;
  */
 public class DropOffLocationsInTheArea {
 
-	/**
-	 * 
-	 */
-	public DropOffLocationsInTheArea() {
-		// TODO Auto-generated constructor stub
+	private String item;
+	private String location;
+	
+	@Override
+	public String toString() {
+		return "DropOffLocationsInTheArea [item=" + item + ", location=" + location + "]";
 	}
 
-	/**
-	 * @param args
-	 */
-	public static void main(String[] args) {
-		// TODO Auto-generated method stub
+	public DropOffLocationsInTheArea(String item, String location) {
+		super();
+		this.item = item;
+		this.location = location;
+	}
 
+	public String getItem() {
+		return item;
+	}
+
+	public String getLocation() {
+		return location;
 	}
 
 }

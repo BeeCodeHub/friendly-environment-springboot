@@ -1,6 +1,6 @@
 package com.enviro.assessment.grad001.buwamabasa.enviro_waste_management;
 
-public class Waste {
+public class WasteDTO {
 	private long id;
 	private String category;
 	private String item;
@@ -10,7 +10,7 @@ public class Waste {
 	//Getters
 	//toString
 	
-	public Waste(long id, String category, String item) {
+	public WasteDTO(long id, String category, String item) {
 		super();
 		this.id = id;
 		this.category = category;

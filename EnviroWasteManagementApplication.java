@@ -9,5 +9,4 @@ public class EnviroWasteManagementApplication {
 	public static void main(String[] args) {
 		SpringApplication.run(EnviroWasteManagementApplication.class, args);
 	}
-
 }
